@@ -1,7 +1,7 @@
+import com.epam.seliazniova.entity.*;
 import org.junit.Test;
-import com.epam.seliazniova.entity.Tetrahedron;
-import com.epam.seliazniova.entity.TetrahedronAction;
 import static org.junit.Assert.*;
+import static java.lang.Math.*;
 
 /**
  * Created by Iryna_Seliazniova on 6/13/2017.
@@ -9,7 +9,15 @@ import static org.junit.Assert.*;
 public class TetrahedronActionTest {
     @Test
     public void tetrahedronVolumeTest(){
-        //Tetrahedron tetrahedron = new Tetrahedron();
+        Point point1 = new Point(0,0,0);
+        Point point2 = new Point(1,0,0);
+        Point point3 = new Point(0.5,sqrt(3)/2,0);
+        Point point4 = new Point(0.5,sqrt(3)/6,1/sqrt(3));
+        TetrahedronAction tetrahedronAction = new TetrahedronAction();
+        Tetrahedron tetrahedron = new Tetrahedron(point1,point2,point3,point4);
+        double expectedVolume = tetrahedronAction.tetrahedronVolume(tetrahedron);
+        double actualVolume = sqrt(2)/12;
+        assertEquals(expectedVolume,actualVolume,0.01);
 
     }
 }

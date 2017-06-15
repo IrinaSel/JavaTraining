@@ -1,5 +1,6 @@
 package com.epam.seliazniova.entity;
 import static java.lang.Math.*;
+
 import com.epam.seliazniova.entity.Point;
 /**
  * Created by Iryna_Seliazniova on 6/13/2017.
