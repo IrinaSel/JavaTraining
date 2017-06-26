@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 import com.epam.seliazniova.entity.Point;
-import com.epam.seliazniova.entity.PointAction;
+import com.epam.seliazniova.action.PointAction;
 
 /**
  * Created by Iryna_Seliazniova on 6/13/2017.

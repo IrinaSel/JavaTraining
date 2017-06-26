@@ -1,4 +1,4 @@
-package com.epam.seliazniova.entity;
+package com.epam.seliazniova.action;
 import com.epam.seliazniova.entity.*;
 import static java.lang.Math.*;
 /**

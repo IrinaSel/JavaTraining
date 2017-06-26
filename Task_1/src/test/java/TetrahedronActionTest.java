@@ -1,3 +1,4 @@
+import com.epam.seliazniova.action.TetrahedronAction;
 import com.epam.seliazniova.entity.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -8,7 +9,7 @@ import static java.lang.Math.*;
  */
 public class TetrahedronActionTest {
     @Test
-    public void tetrahedronVolumeTest(){
+    public static void tetrahedronVolumeTest(){
         Point point1 = new Point(0,0,0);
         Point point2 = new Point(1,0,0);
         Point point3 = new Point(0.5,sqrt(3)/2,0);

@@ -25,4 +25,11 @@ public class Point {
     public double getZ() {
         return z;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj==this) return true;
+        if (obj==null || obj.getClass()!=this.getClass()) return false;
+        return (this.x==((Point) obj).x && this.y ==((Point) obj).y && this.z ==((Point) obj).z);
+    }
 }
