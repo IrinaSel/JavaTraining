@@ -13,7 +13,7 @@ public class DataReader {
 
     final  static Logger LOG = LogManager.getLogger();
 
-    public ArrayList<String> readFile(String fileName){
+    public static ArrayList<String> readFile(String fileName){
         ArrayList<String> fileLine = null;
         String line = null;
             try {
@@ -25,12 +25,10 @@ public class DataReader {
                 while(scanner.hasNextLine()){
                     fileLine.add(scanner.nextLine());
                 }
-            }
-            catch  (FileNotFoundException e) {
-                LOG.info("Can't find the file!");
+                bufferedReader.close();
             }
             catch (IOException exception) {
-                LOG.info("Can't read the file!");
+                LOG.warn("Can't read the file! Returned value is null");
             }
         return fileLine;
     }

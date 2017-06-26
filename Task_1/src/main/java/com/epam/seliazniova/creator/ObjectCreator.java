@@ -37,14 +37,14 @@ public class ObjectCreator {
             pointArray.add(com.epam.seliazniova.creator.ObjectCreator.createPoint(Arrays.copyOfRange(coordinates, 9, 12)));
         }
         else{
-            LOG.info("Can't create Tetrahedron: wrong coordinates ");
+            LOG.warn("Can't create Tetrahedron: wrong coordinates. Returned value is null");
             return null;
         }
         if(Validator.validateIsTetrahedron(pointArray)){
             return new Tetrahedron(pointArray);
         }
         else {
-            LOG.info("Can't create Tetrahedron: wrong coordinates ");
+            LOG.warn("Can't create Tetrahedron: wrong coordinates. Returned value is null");
             return null;
         }
     }

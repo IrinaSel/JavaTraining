@@ -1,4 +1,4 @@
-import com.epam.seliazniova.parser.Parser;
+import com.epam.seliazniova.parser.StringParser;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Iryna_Seliazniova on 6/25/2017.
  */
-public class ParserTest {
+public class StringParserTest {
     @Test
     public void parseStringTest() throws Exception {
         ArrayList<Double[]> expectedString= new ArrayList<Double[]>();
@@ -17,7 +17,7 @@ public class ParserTest {
         String actualStringTest= "1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0,-1.0,1.0,-1.0,-1.0";
         expectedString.add(expectedStringTest);
         actualString.add(actualStringTest);
-        Double[] parserString = Parser.parseString(actualString).get(0);
+        Double[] parserString = StringParser.parseString(actualString).get(0);
         assertArrayEquals(expectedString.get(0), parserString);
     }
 }
