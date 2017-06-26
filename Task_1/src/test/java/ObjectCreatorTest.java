@@ -1,10 +1,8 @@
 import org.junit.Test;
 import com.epam.seliazniova.entity.Point;
-import com.epam.seliazniova.objectCreator.ObjectCreator;
+import com.epam.seliazniova.creator.ObjectCreator;
 import com.epam.seliazniova.entity.Tetrahedron;
 import java.util.ArrayList;
-
-import static java.lang.Math.sqrt;
 
 import static org.junit.Assert.*;
 

@@ -25,8 +25,8 @@ public class Validator {
         }
 
     }
-    public static boolean validateNumberOfCoordinates(Double[] coordinates) {
-        if(coordinates.length== 12) {
+    public static boolean validateNumberOfCoordinates(Double[] coordinates, int numberOfCoordinates) {
+        if(coordinates.length== numberOfCoordinates) {
             return true;
         }
         else {

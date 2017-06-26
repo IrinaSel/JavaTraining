@@ -22,7 +22,7 @@ public class ValidatorTest {
     public void validateNumberOfCoordinatesTest() throws Exception {
         Double[] rightNumberOfCoordinates = new Double[]{1.0,2.0,3.2,4.3,5.4,6.2,7.0,8.0,9.0,10.2,-1.2,2.2};
         boolean expectedResult = true;
-        assertEquals(expectedResult, Validator.validateNumberOfCoordinates(rightNumberOfCoordinates));
+        assertEquals(expectedResult, Validator.validateNumberOfCoordinates(rightNumberOfCoordinates,12));
     }
 
     @Test

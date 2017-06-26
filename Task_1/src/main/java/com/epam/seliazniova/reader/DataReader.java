@@ -14,13 +14,14 @@ public class DataReader {
     final  static Logger LOG = LogManager.getLogger();
 
     public ArrayList<String> readFile(String fileName){
-        ArrayList<String> fileLine = new ArrayList<String>();
+        ArrayList<String> fileLine = null;
         String line = null;
             try {
                 File file = new File(fileName);
                 FileReader fileReader = new FileReader(file);
                 Scanner scanner = new Scanner(file);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
+                fileLine = new ArrayList<String>();
                 while(scanner.hasNextLine()){
                     fileLine.add(scanner.nextLine());
                 }
