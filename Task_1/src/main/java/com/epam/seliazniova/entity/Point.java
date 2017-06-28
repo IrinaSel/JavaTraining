@@ -1,5 +1,7 @@
 package com.epam.seliazniova.entity;
 
+import java.util.Objects;
+
 /**
  * Created by Iryna_Seliazniova on 6/12/2017.
  */
@@ -14,9 +16,7 @@ public class Point {
         this.z = z;
     }
 
-    public double getX() {
-        return x;
-    }
+    public double getX() { return x; }
 
     public double getY() {
         return y;
@@ -28,8 +28,17 @@ public class Point {
 
     @Override
     public boolean equals(Object obj){
-        if (obj==this) return true;
-        if (obj==null || obj.getClass()!=this.getClass()) return false;
-        return (this.x==((Point) obj).x && this.y ==((Point) obj).y && this.z ==((Point) obj).z);
+        if (obj==this){
+            return true;
+        }
+        if (obj==null || !(obj instanceof Point)){
+            return false;
+        }
+        Point point = (Point) obj;
+        return (x == point.x && y ==point.y && z ==point.z);
+    }
+
+    public int hashCode() {
+        return Objects.hash(x,y,z);
     }
 }

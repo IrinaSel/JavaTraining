@@ -2,6 +2,7 @@ package com.epam.seliazniova.entity;
 import com.epam.seliazniova.entity.Point;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * Created by Iryna_Seliazniova on 6/13/2017.
@@ -43,12 +44,21 @@ public class Tetrahedron {
 
     @Override
     public boolean equals(Object obj){
-        if (obj==this) return true;
-        if (obj==null || obj.getClass()!=this.getClass()) return false;
-        return (this.point1.equals(((Tetrahedron) obj).getPoint1())
-                && this.point2.equals(((Tetrahedron) obj).getPoint2())
-                && this.point3.equals(((Tetrahedron) obj).getPoint3())
-                && this.point4.equals(((Tetrahedron) obj).getPoint4()) );
+        if (obj==this) {
+            return true;
+        }
+        if (obj==null || !(obj instanceof Tetrahedron)) {
+            return false;
+        }
+        Tetrahedron tetrahedron = (Tetrahedron) obj;
+        return point1.equals(tetrahedron.getPoint1())
+                && point2.equals(tetrahedron.getPoint2())
+                && point3.equals(tetrahedron.getPoint3())
+                && point4.equals(tetrahedron.getPoint4());
+    }
+
+    public int hashCode() {
+        return Objects.hash(point1,point2,point3,point4);
     }
 }
 
