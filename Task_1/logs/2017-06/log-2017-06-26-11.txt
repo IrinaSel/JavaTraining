@@ -1,0 +1,4 @@
+2017-06-26 13:41:02 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-26 13:41:02 [main] INFO  com.epam.seliazniova.creator.ObjectCreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-26 13:41:02 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-26 13:41:02 [main] INFO  com.epam.seliazniova.creator.ObjectCreator - Can't create Tetrahedron: wrong coordinates 

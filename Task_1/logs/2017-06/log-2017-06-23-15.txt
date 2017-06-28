@@ -1,0 +1,22 @@
+2017-06-23 15:45:04 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:45:12 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:45:18 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:45:37 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:46:11 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:46:28 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:46:28 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:46:28 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:46:28 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:46:30 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:46:30 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:46:30 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:46:49 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:46:50 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:47:18 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates
+2017-06-23 15:53:28 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-23 15:53:44 [main] INFO  com.epam.seliazniova.creator.Сreator - Can't create Tetrahedron: wrong coordinates 
+2017-06-23 15:53:55 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-23 15:56:16 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-23 15:56:38 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-23 15:57:41 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-23 15:58:24 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid

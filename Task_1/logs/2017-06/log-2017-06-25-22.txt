@@ -1,0 +1,3 @@
+2017-06-25 22:10:37 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-25 22:10:41 [main] INFO  com.epam.seliazniova.validator.Validator - String format is invalid
+2017-06-25 22:15:48 [main] INFO  com.epam.seliazniova.validator.Validator - Can't create tetrahedron from these coordinates

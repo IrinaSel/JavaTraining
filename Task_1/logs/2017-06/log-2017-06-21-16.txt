@@ -1,0 +1,8 @@
+2017-06-21 16:07:29 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:11:23 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:16:48 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:17:18 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:37:41 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:38:16 [main] INFO  com.epam.seliazniova.reader.DataReader - Can't find the file!
+2017-06-21 16:38:53 [main] INFO  com.epam.seliazniova.validator.Validator - Wrong number of coordinates
+2017-06-21 16:42:11 [main] INFO  com.epam.seliazniova.validator.Validator - Wrong number of coordinates
