@@ -1,12 +1,19 @@
 package com.epam.seliazniova.entity;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
+
 /**
  * Created by Iryna_Seliazniova on 6/27/2017.
  */
-public class AbstractPublication {
-    protected String publisher;
-    protected String publicationTitle;
-    protected int numberOfPages;
+public class AbstractPublication implements Comparable{
+    //protected int id;
+    private String publisher;
+    private String publicationTitle;
+    private int numberOfPages;
+
+    //public int getId() { return id; }
 
     public String getPublisher() {
         return publisher;
@@ -28,4 +35,35 @@ public class AbstractPublication {
         this.publicationTitle = publicationTitle;
         this.numberOfPages = numberOfPages;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj==this){
+            return true;
+        }
+        if (obj==null || !(obj instanceof Journal)){
+            return false;
+        }
+        AbstractPublication aPublication = (AbstractPublication) obj;
+        return numberOfPages == aPublication.numberOfPages
+                && publisher.equals(aPublication.publisher)
+                && publicationTitle.equals(aPublication.publicationTitle);
+    }
+
+    public int hashCode() {
+        return Objects.hash(numberOfPages,publisher,publicationTitle);
+    }
+
+    @Override
+    public int compareTo(@NotNull Object obj) {
+        AbstractPublication aPublication = (AbstractPublication) obj;
+        if (numberOfPages > aPublication.numberOfPages){
+            return 1;
+        }
+        if (numberOfPages < aPublication.numberOfPages) {
+            return -1;
+        }
+        return 0;
+    }
+
 }
