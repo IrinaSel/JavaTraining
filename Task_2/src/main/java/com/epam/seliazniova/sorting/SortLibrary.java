@@ -14,7 +14,7 @@ public class SortLibrary {
     public Library sortLibraryByNumbOfPagesAndGenre(Library library){
         GenreComparator genreComparator = new GenreComparator();
         NumberOfPagesComparator numberOfPagesComparator = new NumberOfPagesComparator();
-        library.getLibraryList().sort(numberOfPagesComparator.thenComparing(genreComparator));
+        library.getLibraryList().sort(genreComparator.thenComparing(numberOfPagesComparator));
         return  library;
     }
 }
